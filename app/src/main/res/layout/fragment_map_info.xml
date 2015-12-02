@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvInfoCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_info"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rename_city"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivWeatherIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+</LinearLayout>
