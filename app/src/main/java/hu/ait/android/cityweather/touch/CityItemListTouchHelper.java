@@ -27,8 +27,6 @@ public class CityItemListTouchHelper extends ItemTouchHelper.Callback {
     public boolean onMove(RecyclerView recyclerView,
                           RecyclerView.ViewHolder viewHolder,
                           RecyclerView.ViewHolder target) {
-        //messes up editing
-        //adapter.swapItems(viewHolder.getAdapterPosition(), target.getAdapterPosition());
 
         return true;
     }

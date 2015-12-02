@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 
 import de.greenrobot.event.EventBus;
 import hu.ait.android.cityweather.R;
@@ -52,7 +53,6 @@ public class FragmentMapDetails extends Fragment {
     }
 
     public void onEventMainThread(CityResult cityResult) {
-        //set textview here;
         tvCityName.setText("City: " + cityResult.getName());
         tvMinTemp.setText("Minimum Temperature: " + cityResult.getMain().getTempMin().toString() + " \u00b0 C");
         tvMaxTemp.setText("Maximum Temperature: " + cityResult.getMain().getTempMax().toString() + " ° C");
@@ -63,7 +63,7 @@ public class FragmentMapDetails extends Fragment {
     public void getWeather(String city) {
 
         try {
-            String urlCityName = UrlEncoder.encode(city);
+            String urlCityName = URLEncoder.encode(city);
             new HttpAsyncTask(getActivity().getApplicationContext()).execute(
                     "http://api.openweathermap.org/data/2.5/weather?q=" + urlCityName + "&units=metric&APPID=6290e650b9ffc24da1e9106fd489b6fd"
             );

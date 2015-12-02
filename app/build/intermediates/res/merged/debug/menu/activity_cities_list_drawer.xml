@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_add_city"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/action_add_city" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/action_about" />
+    </group>
+
+
+
+</menu><!-- From: file:/home/joe/AndroidStudioProjects/CityWeather/app/src/main/res/menu/activity_cities_list_drawer.xml -->

@@ -53,7 +53,6 @@ public class FragmentMapInfo extends Fragment {
     }
 
     public void onEventMainThread(CityResult cityResult) {
-        //set textview here;
         tvCityName.setText("City: " + cityResult.getName());
         tvTemperature.setText("Temperature: " + cityResult.getMain().getTemp() + "° C");
         tvDescription.setText("Description: " + cityResult.getWeather().get(0).getDescription());
@@ -63,9 +62,9 @@ public class FragmentMapInfo extends Fragment {
     public void getWeather(String city) {
 
         try {
-            String urlCityName = UrlEncoder.encode(city);
+            String urlCityName = URLEncoder.encode(city);
             new HttpAsyncTask(getActivity().getApplicationContext()).execute(
-                    "http://api.openweathermap.org/data/2.5/weather?q=" + urlCityName + "&units=metric&APPID=6290e650b9ffc24da1e9106fd489b6fd"
+                    "http://api.openweathermap.org/data/2.5/weather?q=" + city/*urlCityName*/ + "&units=metric&APPID=6290e650b9ffc24da1e9106fd489b6fd"
             );
         } catch (Exception e) {
             e.printStackTrace();

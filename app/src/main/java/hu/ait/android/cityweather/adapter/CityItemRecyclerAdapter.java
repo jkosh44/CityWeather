@@ -30,10 +30,6 @@ public class CityItemRecyclerAdapter extends RecyclerView.Adapter<CityItemRecycl
 
 
     public static final String CITY_NAME = "CITY_NAME";
-    public static final String CITY_RESULT = "CITY_RESULT";
-    public static final String DESCRIPTION = "DESCRIPTION";
-    public static final String TEMP = "TEMP";
-    public static final String MIN_TEMP = "MIN_TEMP";
 
     private Intent detailsIntent;
 
@@ -55,7 +51,6 @@ public class CityItemRecyclerAdapter extends RecyclerView.Adapter<CityItemRecycl
 
     private List<CityItem> cityItemsList;
     private Context context;
-    //private int lastPosition = -1;
 
     public CityItemRecyclerAdapter(List<CityItem> cityItemsList, Context context) {
         this.cityItemsList = cityItemsList;

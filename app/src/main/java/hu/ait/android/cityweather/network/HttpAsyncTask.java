@@ -73,9 +73,6 @@ public class HttpAsyncTask extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-        /*Intent intentResult = new Intent(FILTER_HTTP_RESULT);
-        intentResult.putExtra(KEY_EXCHANGE_RESULT, result);
-        LocalBroadcastManager.getInstance(context).sendBroadcast(intentResult);*/
         try {
             Gson gson = new Gson();
             CityResult cityResult = gson.fromJson(result, CityResult.class);

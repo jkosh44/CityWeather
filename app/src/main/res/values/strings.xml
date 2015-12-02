@@ -19,7 +19,7 @@
     <string name="details">Details</string>
     <string name="add_city_fragment_interface_error">" must implement AddCityFragmentInterface"</string>
     <string name="no_info">No Info About This City</string>
-    <string name="rename_city">Try renaming the city</string>
+    <string name="rename_city">Try renaming the city or turning on Wifi</string>
     <string name="invalid_city">Invalid city name</string>
 
 </resources>

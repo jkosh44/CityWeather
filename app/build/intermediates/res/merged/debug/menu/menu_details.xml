@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hu.ait.android.cityweather.DetailsActivity">
+    <item
+        android:id="@+id/action_details_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>
+<!-- From: file:/home/joe/AndroidStudioProjects/CityWeather/app/src/main/res/menu/menu_details.xml -->

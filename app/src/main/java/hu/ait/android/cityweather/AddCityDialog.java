@@ -22,7 +22,6 @@ import hu.ait.android.cityweather.data.CityItem;
 public class AddCityDialog extends DialogFragment {
 
     public static final String TAG = "DialogFragment";
-    //public static final String KEY_MSG = "KEY_MSG";
 
     public interface AddCityFragmentInterface {
         public void onAddCityFragmentResult(CityItem city);
@@ -30,16 +29,6 @@ public class AddCityDialog extends DialogFragment {
 
     private CityItem newCity;
     private AddCityFragmentInterface addCityFragmentInterface;
-
-    /*@Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-
-        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                getActivity());
-        alertDialogBuilder.setView(R.layout.add_city_dialog);
-
-        return alertDialogBuilder.create();
-    }*/
 
     @Override
     public void onAttach(Activity activity) {
@@ -90,5 +79,7 @@ public class AddCityDialog extends DialogFragment {
 
         return v;
     }
+
+
 
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/joe/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/home/joe/AndroidStudioProjects/CityWeather/app/build/intermediates/pre-dexed/debug/eventbus-2.4.0-806eb232009266afd3708ee69cd65fd6af4d64a0.jar" />
+    </item>
+    <item
+        jar="/home/joe/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/1.7.2/112366d8158749e25532ebce162232c6e0fb20a5/gson-1.7.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="112366d8158749e25532ebce162232c6e0fb20a5">
+        <dex dex="/home/joe/AndroidStudioProjects/CityWeather/app/build/intermediates/pre-dexed/debug/gson-1.7.2-ad97478f6f0d0e7bfc11ed275f2132d4b9e210df.jar" />
+    </item>
+
+</items>
