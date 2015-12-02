@@ -8,12 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URLEncoder;
 
 import de.greenrobot.event.EventBus;
@@ -53,10 +50,13 @@ public class FragmentMapInfo extends Fragment {
     }
 
     public void onEventMainThread(CityResult cityResult) {
-        tvCityName.setText("City: " + cityResult.getName());
-        tvTemperature.setText("Temperature: " + cityResult.getMain().getTemp() + "° C");
-        tvDescription.setText("Description: " + cityResult.getWeather().get(0).getDescription());
-        Glide.with(this).load("http://openweathermap.org/img/w/" + cityResult.getWeather().get(0).getIcon() + ".png").into(ivWeatherIcon);
+        if (cityResult.getName() != null) {
+            tvCityName.setText("City: " + cityResult.getName());
+        }
+            tvTemperature.setText("Temperature: " + cityResult.getMain().getTemp() + "° C");
+            tvDescription.setText("Description: " + cityResult.getWeather().get(0).getDescription());
+            Glide.with(this).load("http://openweathermap.org/img/w/" + cityResult.getWeather().get(0).getIcon() + ".png").into(ivWeatherIcon);
+
     }
 
     public void getWeather(String city) {

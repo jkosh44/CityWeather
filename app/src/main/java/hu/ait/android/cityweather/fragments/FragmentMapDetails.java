@@ -7,10 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URLEncoder;
 
 import de.greenrobot.event.EventBus;
@@ -53,11 +50,14 @@ public class FragmentMapDetails extends Fragment {
     }
 
     public void onEventMainThread(CityResult cityResult) {
-        tvCityName.setText("City: " + cityResult.getName());
+        if (cityResult.getName() != null) {
+            tvCityName.setText("City: " + cityResult.getName());
+        }
         tvMinTemp.setText("Minimum Temperature: " + cityResult.getMain().getTempMin().toString() + " \u00b0 C");
         tvMaxTemp.setText("Maximum Temperature: " + cityResult.getMain().getTempMax().toString() + " ° C");
         tvHumid.setText("Humidity: " + cityResult.getMain().getHumidity().toString() + "%");
         tvWindSpeed.setText("Wind Speed: " + cityResult.getWind().getSpeed().toString() + " km/h");
+
     }
 
     public void getWeather(String city) {

@@ -67,7 +67,7 @@ public class DetailsActivity extends AppCompatActivity {
         cityName = getIntent().getStringExtra(CityItemRecyclerAdapter.CITY_NAME);
 
 
-        Toast.makeText(DetailsActivity.this, cityName, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(DetailsActivity.this, cityName, Toast.LENGTH_SHORT).show();
 
     }
 
