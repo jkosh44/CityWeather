@@ -57,7 +57,6 @@ public class FragmentMapDetails extends Fragment {
         tvMaxTemp.setText("Maximum Temperature: " + cityResult.getMain().getTempMax().toString() + " ° C");
         tvHumid.setText("Humidity: " + cityResult.getMain().getHumidity().toString() + "%");
         tvWindSpeed.setText("Wind Speed: " + cityResult.getWind().getSpeed().toString() + " km/h");
-
     }
 
     public void getWeather(String city) {

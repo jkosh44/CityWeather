@@ -2,26 +2,20 @@ package hu.ait.android.cityweather.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
-import hu.ait.android.cityweather.CitiesListActivity;
 import hu.ait.android.cityweather.DetailsActivity;
 import hu.ait.android.cityweather.R;
 import hu.ait.android.cityweather.data.CityItem;
-import hu.ait.android.cityweather.data.CityResult;
-import hu.ait.android.cityweather.network.HttpAsyncTask;
 
 /**
  * Created by joe on 11/23/15.
